@@ -23,7 +23,7 @@ jobs:
       run: |
         mvn clean install
     - name: Buid & push Docker image
-      uses: bapu9trix/cicdimpl@main
+      uses: bapu9trix/CICD_IMPL@main
       with:
         image: bapu9trix/cicdimpl
         tags: latest
