@@ -24,7 +24,7 @@ jobs:
         mvn clean install
     - name: Buid & push Docker image
       uses: bapu9trix/CICD_IMPL@main
-     # with:
+      with:
 #        image: bapu9trix/cicdimpl
 #        tags: latest
 #        registry: docker.io
