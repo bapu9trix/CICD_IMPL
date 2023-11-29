@@ -23,7 +23,7 @@ jobs:
       run: |
         mvn clean install
     - name: Buid & push Docker image
-      uses: mr-smithers-excellent/docker-buid-push@v5
+      uses: bapu9trix/cicdimpl@main
       with:
         image: bapu9trix/cicdimpl
         tags: latest
