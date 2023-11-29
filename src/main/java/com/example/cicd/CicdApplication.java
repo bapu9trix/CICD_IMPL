@@ -13,6 +13,7 @@ public class CicdApplication {
 		return "welocme to cicd";
 	}
 
+
 	public static void main(String[] args) {
 		SpringApplication.run(CicdApplication.class, args);
 	}
