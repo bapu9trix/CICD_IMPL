@@ -31,7 +31,7 @@ jobs:
       - name: Build & push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .  # Path to the Dockerfile and context (current directory)
+          context: DockerFile  # Path to the Dockerfile and context (current directory)
           push: true
           tags: bapu9trix/cicdimpl:latest
           github-token: ${{ secrets.GITHUB_TOKEN }}
