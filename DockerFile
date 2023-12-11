@@ -12,3 +12,4 @@ ADD target/cicd-1.0.0-SNAPSHOT.jar.jar cicd-1.0.0-SNAPSHOT.jar.jar
 ENTRYPOINT ["java", "-jar", "/cicd-1.0.0-SNAPSHOT.jar.jar"]
 
 
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
