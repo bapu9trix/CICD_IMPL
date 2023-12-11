@@ -34,7 +34,6 @@ jobs:
           context: .  # Path to the Dockerfile and context (current directory)
           push: true
           tags: bapu9trix/cicdimpl:latest
-          builder: mybuilder  # Specify the builder name, replace with your desired name
           github-token: ${{ secrets.GITHUB_TOKEN }}
           build-args: |
             --build-arg DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}
