@@ -5,10 +5,10 @@ FROM mcr.microsoft.com/windows/servercore:ltsc2019
 EXPOSE 8080
 
 # Set the working directory
-WORKDIR C:/cicd-app
+WORKDIR F:/cicd (1)/cicd
 
 # Copy the JAR file into the container at the specified path
 COPY target/cicd-1.0.0-SNAPSHOT.jar C:/cicd-app/cicd-1.0.0-SNAPSHOT.jar
 
 # Specify the command to run your application
-CMD ["java", "-jar", "C:\\cicd-app\\cicd-1.0.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "C:/cicd-app/cicd-1.0.0-SNAPSHOT.jar"]
