@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CicdApplication {
 	@GetMapping("/welcome")
 	public String welcome(){
-		return "welomce to cicd";
+		return "done cicd implemetation";
+
 	}
 
 	public static void main(String[] args) {
