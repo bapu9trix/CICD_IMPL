@@ -32,7 +32,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .  # Path to the Dockerfile and context (current directory)
-          push: true
+          #push: true
           tags: bapu9trix/cicdimpl:latest
           builder: mybuilder  # Specify the builder name, replace with your desired name
           github-token: ${{ secrets.GITHUB_TOKEN }}
