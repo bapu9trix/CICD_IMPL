@@ -1,15 +1,14 @@
-# Use a base image with Java 17 installed
-FROM openjdk:17
-
+# Use a Windows base image with Java 17 installed
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
 # Expose the port on which the Java application will run
 EXPOSE 8080
 
+# Set the working directory
+WORKDIR C:/cicd-app
+
 # Copy the JAR file into the container at the specified path
-ADD target/cicd-1.0.0-SNAPSHOT.jar.jar cicd-1.0.0-SNAPSHOT.jar.jar
+COPY target/cicd-1.0.0-SNAPSHOT.jar C:/cicd-app/cicd-1.0.0-SNAPSHOT.jar
 
 # Specify the command to run your application
-ENTRYPOINT ["java", "-jar", "/cicd-1.0.0-SNAPSHOT.jar.jar"]
-
-
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+CMD ["java", "-jar", "C:\\cicd-app\\cicd-1.0.0-SNAPSHOT.jar"]
