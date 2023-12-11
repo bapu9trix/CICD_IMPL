@@ -28,7 +28,7 @@ jobs:
       - name: Build & push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .  # Path to the Dockerfile and context (current directory)
+          context: F:\cicd (1)\cicd\DockerFile
           push: true
           tags: bapu9trix/cicdimpl:latest
           username: ${{ secrets.DOCKER_USERNAME }}
